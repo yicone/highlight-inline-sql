@@ -1,9 +1,9 @@
 {
-  "name": "es6-string-html",
-  "displayName": "es6-string-html",
-  "description": "Syntax highlighting in es6 multiline strings",
-  "version": "1.8.3",
-  "publisher": "Tobermory",
+  "name": "python-string-html",
+  "displayName": "python-string-html",
+  "description": "Syntax highlighting in Python multiline strings",
+  "version": "0.0.0",
+  "publisher": "ptweir",
   "icon": "docs/logo.png",
   "engines": {
     "vscode": "^1.19.0"
@@ -13,36 +13,36 @@
     "theme": "light"
   },
   "repository": {
-    "url": "https://github.com/mydesireiscoma/es6-string-html"
+    "url": "https://github.com/ptweir/python-string-html"
   },
   "bugs": {
-    "url": "https://github.com/mydesireiscoma/es6-string-html/issues"
+    "url": "https://github.com/ptweir/python-string-html/issues"
   },
   "main": "./scripts/main",
   "categories": [
     "Languages"
   ],
   "keywords": [
-    "javascript",
-    "es6",
-    "es6-string-html",
+    "python",
+    "python3",
+    "python-string-html",
     "html",
     "sql"
   ],
   "activationEvents": [
-    "onCommand:es6stringhtml.insertComment",
-    "onCommand:es6stringhtml.insertTemplate"
+    "onCommand:pythonstringhtml.insertComment",
+    "onCommand:pythonstringhtml.insertTemplate"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "es6stringhtml.insertComment",
-        "title": "Insert es6-string-html comment",
+        "command": "pythonstringhtml.insertComment",
+        "title": "Insert python-string-html comment",
         "category": "HTML"
       },
       {
-        "command": "es6stringhtml.insertTemplate",
-        "title": "Insert es6-string-html template",
+        "command": "pythonstringhtml.insertTemplate",
+        "title": "Insert python-string-html template",
         "category": "HTML"
       }
     ],
