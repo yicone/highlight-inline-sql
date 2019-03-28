@@ -2,11 +2,11 @@
     "name": "python-string-sql",
     "displayName": "python-string-sql",
     "description": "highlight python strings as sql",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "ptweir",
     "repository": {
         "url": "https://github.com/ptweir/python-string-sql"
-      },
+    },
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -15,14 +15,16 @@
     ],
     "contributes": {
         "grammars": [
-          {
-            "path": "./syntaxes/highlight-sql-string.json",
-            "scopeName": "python-sql.injection",
-            "injectTo": ["source.python"],
-            "embeddedLanguages": {
-                "meta.embedded.sql": "sql"
-              }
-          }
+            {
+                "path": "./syntaxes/highlight-sql-string.json",
+                "scopeName": "python-sql.injection",
+                "injectTo": [
+                    "source.python"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.sql": "sql"
+                }
+            }
         ]
-      }
+    }
 }
