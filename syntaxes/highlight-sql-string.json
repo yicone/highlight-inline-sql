@@ -7,15 +7,12 @@
       {
         "begin": "(--sql|--beginsql|--begin-sql)",
         "end": "(;|--endsql|--end-sql)",
-        "beginCaptures": {
+        "captures": {
           "1": {
             "name": "variable.parameter"
           }
         },
         "patterns": [
-          {
-            "include": "source.ts#template-substitution-element"
-          },
           {
             "include": "source.sql"
           }
@@ -23,5 +20,5 @@
       }
     ],
     "scopeName": "python-sql.injection"
-  }
+}
   

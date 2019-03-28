@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "publisher": "ptweir",
     "repository": {
-        "url": "https://github.com/ptweir/python-string-html"
+        "url": "https://github.com/ptweir/python-string-sql"
       },
     "engines": {
         "vscode": "^1.32.0"
