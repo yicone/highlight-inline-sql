@@ -66,30 +66,26 @@
       },
       {
         "injectTo": [
-          "source.js",
-          "source.js.jsx",
-          "source.jsx",
+          "source.py",
           "source.ts",
           "source.tsx",
           "text.html.basic"
         ],
-        "scopeName": "inline.es6-html",
-        "path": "./syntaxes/es6-inline-html.json",
+        "scopeName": "inline.python-html",
+        "path": "./syntaxes/python-inline-html.json",
         "embeddedLanguages": {
           "meta.embedded.block.html": "html"
         }
       },
       {
         "injectTo": [
-          "source.js",
-          "source.js.jsx",
-          "source.jsx",
+          "source.py",
           "source.ts",
           "source.tsx",
           "source.sql"
         ],
-        "scopeName": "inline.es6-sql",
-        "path": "./syntaxes/es6-inline-sql.json",
+        "scopeName": "inline.python-sql",
+        "path": "./syntaxes/python-inline-sql.json",
         "embeddedLanguages": {
           "meta.embedded.sql": "sql"
         }
