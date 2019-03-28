@@ -4,8 +4,8 @@ var vscode = require('vscode')
 
 function activate(context) {
   context.subscriptions.push(
-    vscode.commands.registerCommand("es6stringhtml.insertComment", () => insertString()),
-    vscode.commands.registerCommand("es6stringhtml.insertTemplate", () => insertString(true)),
+    vscode.commands.registerCommand("pythonstringhtml.insertComment", () => insertString()),
+    vscode.commands.registerCommand("pythonstringhtml.insertTemplate", () => insertString(true)),
   )
 }
 
@@ -18,7 +18,7 @@ function deactivate() {
  * @param {boolean} full
  */
 function insertString (full) {
-  const string = full ? '/*html*/ ``' : '/*html*/'
+  const string = full ? '"""--sql""""' : '"""--sql'
   const editor = vscode.window.activeTextEditor
   const selections = editor.selections
 
