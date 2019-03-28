@@ -1,10 +1,7 @@
 # Python String HTML 
 > Hopefully ready to add to the VSCode Marketplace soon
 
-Adds syntax highlight support for code, placed in python multiline SQL strings
-
-## Community
-- 2018-09-04 forked from [es6-string-css](https://github.com/bashmish/es6-string-css) - Highlight CSS in ES6 template literals
+Adds syntax highlight support for python multiline SQL strings in VS Code.
 
 ## Installation
 
@@ -16,19 +13,15 @@ Adds syntax highlight support for code, placed in python multiline SQL strings
 
 ## Usage
 
-Simply insert `--sql`, `--beginsql`, or `--begin-sql` at the beginning of the string
-and `--endsql` or `--end-sql` at the end of the string
+Insert `--sql`, `--beginsql`, or `--begin-sql` at the beginning of the part of the string you would like highlighted and a semicolon, `--endsql` or `--end-sql` at the end of the highlighted section.
 
 ## Requirements
 
 - Visual Studio Code v1.32.0 recommended
-- Comment `--sql` to start highlighting in the string. Possible values:
+- Comment `--sql` to start highlighting in the string.
 
-## Donation
-
-If this project help you reduce time to develop, you can give the original develper a cup of coffee :)
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=68P8BFSZPG5H2)
+## Community
+- 2018-09-04 forked from [es6-string-css](https://github.com/bashmish/es6-string-css) - Highlight CSS in ES6 template literals
 
 ## Release Notes
 
@@ -38,6 +31,3 @@ If this project help you reduce time to develop, you can give the original devel
 ### [0.0.0] - 2018-09-04
 - Forked from es6-string-html
 
------------------------------------------------------------------------------------------------------------
-
-**Enjoy!**
