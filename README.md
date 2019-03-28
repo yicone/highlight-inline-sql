@@ -12,7 +12,7 @@ Adds syntax highlight support for code, placed in python multiline SQL strings
 
 ## Example
 
-![Example](docs/demo.png)
+[![Example](docs/demo.png)](docs/demo.py)
 
 ## Usage
 
