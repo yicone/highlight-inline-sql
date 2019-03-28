@@ -6,7 +6,7 @@
     "patterns": [
       {
         "begin": "(--sql|--beginsql|--begin-sql)",
-        "end": "(--endsql|--end-sql)",
+        "end": "(;|--endsql|--end-sql)",
         "beginCaptures": {
           "1": {
             "name": "variable.parameter"
