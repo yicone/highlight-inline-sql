@@ -4,7 +4,7 @@ Adds syntax highlight support for python multiline SQL strings in VS Code.
 
 ## Installation
 
-Install `python-string-sql` from extensions (`ctrl + shift + x`)
+Install `python-string-sql` from extensions (`ctrl + shift + x` or `cmd + shift + x` on mac)
 
 ## Example
 
@@ -24,7 +24,10 @@ Insert `--sql`, `--beginsql`, or `--begin-sql` at the beginning of the part of t
 
 ## Release Notes
 
-### [0.0.1] - 2018-09-04
+### [0.1.0] - 2019-03-28
+- Published on VS Code marketplace
+
+### [0.0.1] - 2019-03-28
 - Got it working based on [these instructions](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
 ### [0.0.0] - 2018-09-04
