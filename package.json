@@ -1,95 +1,28 @@
 {
-  "name": "python-string-html",
-  "displayName": "python-string-html",
-  "description": "Syntax highlighting in Python multiline strings",
-  "version": "0.0.0",
-  "publisher": "ptweir",
-  "icon": "docs/logo.png",
-  "engines": {
-    "vscode": "^1.19.0"
-  },
-  "galleryBanner": {
-    "color": "#dedede",
-    "theme": "light"
-  },
-  "repository": {
-    "url": "https://github.com/ptweir/python-string-html"
-  },
-  "bugs": {
-    "url": "https://github.com/ptweir/python-string-html/issues"
-  },
-  "main": "./scripts/main",
-  "categories": [
-    "Languages"
-  ],
-  "keywords": [
-    "python",
-    "python3",
-    "python-string-html",
-    "html",
-    "sql"
-  ],
-  "activationEvents": [
-    "onCommand:pythonstringhtml.insertComment",
-    "onCommand:pythonstringhtml.insertTemplate"
-  ],
-  "contributes": {
-    "commands": [
-      {
-        "command": "pythonstringhtml.insertComment",
-        "title": "Insert python-string-html comment",
-        "category": "HTML"
+    "name": "python-string-sql",
+    "displayName": "python-string-sql",
+    "description": "highlight python strings as sql",
+    "version": "0.0.1",
+    "publisher": "ptweir",
+    "repository": {
+        "url": "https://github.com/ptweir/python-string-html"
       },
-      {
-        "command": "pythonstringhtml.insertTemplate",
-        "title": "Insert python-string-html template",
-        "category": "HTML"
-      }
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
     ],
-    "grammars": [
-      {
-        "injectTo": [
-          "source.js",
-          "source.js.jsx",
-          "source.jsx",
-          "source.ts",
-          "source.tsx",
-          "source.sql",
-          "text.html.basic"
-        ],
-        "scopeName": "inline.es6-js-injection",
-        "path": "./syntaxes/es6-js-injection.json",
-        "embeddedLanguages": {
-          "meta.template.expression.ts": "typescript",
-          "meta.template.expression.js": "javascript"
-        }
-      },
-      {
-        "injectTo": [
-          "source.py",
-          "source.ts",
-          "source.tsx",
-          "text.html.basic"
-        ],
-        "scopeName": "inline.python-html",
-        "path": "./syntaxes/python-inline-html.json",
-        "embeddedLanguages": {
-          "meta.embedded.block.html": "html"
-        }
-      },
-      {
-        "injectTo": [
-          "source.py",
-          "source.ts",
-          "source.tsx",
-          "source.sql"
-        ],
-        "scopeName": "inline.python-sql",
-        "path": "./syntaxes/python-inline-sql.json",
-        "embeddedLanguages": {
-          "meta.embedded.sql": "sql"
-        }
+    "contributes": {
+        "grammars": [
+          {
+            "path": "./syntaxes/highlight-sql-string.json",
+            "scopeName": "python-sql.injection",
+            "injectTo": ["source.python"],
+            "embeddedLanguages": {
+                "meta.embedded.sql": "sql"
+              }
+          }
+        ]
       }
-    ]
-  }
 }
