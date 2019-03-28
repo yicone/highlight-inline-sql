@@ -1,4 +1,4 @@
-# Python String HTML 
+# SQL highlighting in Python multiline strings for VS Code 
 > Hopefully ready to add to the VSCode Marketplace soon
 
 Adds syntax highlight support for python multiline SQL strings in VS Code.
@@ -21,7 +21,7 @@ Insert `--sql`, `--beginsql`, or `--begin-sql` at the beginning of the part of t
 - Comment `--sql` to start highlighting in the string.
 
 ## Community
-- 2018-09-04 forked from [es6-string-css](https://github.com/bashmish/es6-string-css) - Highlight CSS in ES6 template literals
+- 2018-09-04 forked from [es6-string-css](https://github.com/bashmish/es6-string-css)
 
 ## Release Notes
 
