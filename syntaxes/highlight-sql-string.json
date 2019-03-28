@@ -1,0 +1,27 @@
+{
+    "fileTypes": [
+      "py"
+    ],
+    "injectionSelector": "L:string.quoted.multi",
+    "patterns": [
+      {
+        "begin": "(--sql|--beginsql|--begin-sql)",
+        "end": "(--endsql|--end-sql)",
+        "beginCaptures": {
+          "1": {
+            "name": "variable.parameter"
+          }
+        },
+        "patterns": [
+          {
+            "include": "source.ts#template-substitution-element"
+          },
+          {
+            "include": "source.sql"
+          }
+        ]
+      }
+    ],
+    "scopeName": "python-sql.injection"
+  }
+  
