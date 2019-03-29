@@ -2,7 +2,7 @@
     "name": "python-string-sql",
     "displayName": "python-string-sql",
     "description": "highlight python strings as sql",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "ptweir",
     "icon": "docs/logo.png",
     "repository": {
