@@ -4,7 +4,8 @@ Adds syntax highlight support for python multiline SQL strings in VS Code.
 
 ## Installation
 
-Install `python-string-sql` from extensions (`ctrl + shift + x` or `cmd + shift + x` on mac)
+Install `python-string-sql` from extensions (`ctrl + shift + x` or `cmd + shift + x` on mac).
+> Also available on ![marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=ptweir.python-string-sql)
 
 ## Example
 
