@@ -17,7 +17,7 @@ Insert `--sql`, `--beginsql`, or `--begin-sql` at the beginning of the part of t
 ### Snippets
 begin typing `sql` and the autocomplete snippet will appear:
 
-[Snippet](docs/snippet.gif)
+![Snippet](docs/snippet.gif)
 
 ### Keybindings
 
