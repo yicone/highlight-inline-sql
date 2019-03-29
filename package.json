@@ -2,7 +2,7 @@
     "name": "python-string-sql",
     "displayName": "python-string-sql",
     "description": "highlight python strings as sql",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "publisher": "ptweir",
     "icon": "docs/logo.png",
     "repository": {
@@ -30,19 +30,21 @@
         ],
         "snippets": [
             {
-              "language": "python",
-              "path": "./snippets/python.json"
+                "language": "python",
+                "path": "./snippets/python.json"
             }
-          ],
-        "keybindings": [{
-            "command": "editor.action.insertSnippet",
-            "key": "cmd+s",
-            "mac": "ctrl+s",
-            "when": "editorTextFocus",
-            "args": {
-                "langId": "python",
-                "name": "SQL_highlighted_string"
-              }
-        }]
+        ],
+        "keybindings": [
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "cmd+s",
+                "mac": "ctrl+s",
+                "when": "editorTextFocus",
+                "args": {
+                    "langId": "python",
+                    "name": "SQL_highlighted_string"
+                }
+            }
+        ]
     }
 }
