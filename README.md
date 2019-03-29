@@ -40,6 +40,9 @@ SELECT
 
 ## Release Notes
 
+### [1.0.0] - 2019-03-29
+- Added snippet and keybinding
+
 ### [0.1.0] - 2019-03-28
 - Published on VS Code marketplace
 
