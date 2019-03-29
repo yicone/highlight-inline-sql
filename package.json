@@ -4,6 +4,7 @@
     "description": "highlight python strings as sql",
     "version": "0.1.0",
     "publisher": "ptweir",
+    "icon": "docs/logo.png",
     "repository": {
         "url": "https://github.com/ptweir/python-string-sql"
     },
