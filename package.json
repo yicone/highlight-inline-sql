@@ -12,7 +12,8 @@
         "vscode": "^1.32.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "grammars": [
@@ -26,6 +27,22 @@
                     "meta.embedded.sql": "sql"
                 }
             }
-        ]
+        ],
+        "snippets": [
+            {
+              "language": "python",
+              "path": "./snippets/python.json"
+            }
+          ],
+        "keybindings": [{
+            "command": "editor.action.insertSnippet",
+            "key": "cmd+s",
+            "mac": "ctrl+s",
+            "when": "editorTextFocus",
+            "args": {
+                "langId": "python",
+                "name": "SQL_highlighted_string"
+              }
+        }]
     }
 }
