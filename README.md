@@ -41,6 +41,9 @@ SELECT
 
 ## Release Notes
 
+### [1.1.0] - 2019-06-04
+- Added support for f-strings
+
 ### [1.0.0] - 2019-03-29
 - Added snippet and keybinding
 
