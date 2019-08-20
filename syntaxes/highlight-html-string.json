@@ -1,0 +1,57 @@
+{
+  "fileTypes": [
+    "py"
+  ],
+  "injectionSelector": "L:string.quoted.multi.python, L:meta.fstring.python - (comment.line.number-sign.python, punctuation.definition.comment.python)",
+  "repository": {
+    "keep-variables": {
+      "patterns": [
+        {
+          "begin": "\\{",
+          "end": "\\}",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.section.embedded.begin.py"
+            },
+            "2": {
+              "name": "punctuation.section.embedded"
+            }
+          },
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.section.embedded.end.py"
+            },
+            "2": {
+              "name": "punctuation.section.embedded"
+            }
+          },
+          "patterns": [
+            {
+              "include": "text.html.derivative"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "patterns": [
+    {
+      "begin": "( *--html| *--beginhtml| *--begin-html)",
+      "end": "( *--\\!html| *--endhtml| *--end-html)",
+      "captures": {
+        "1": {
+          "name": "variable.parameter"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.derivative"
+        },
+        {
+          "include": "#keep-variables"
+        }
+      ]
+    }
+  ],
+  "scopeName": "python-html.injection"
+}

@@ -26,6 +26,16 @@
                 "embeddedLanguages": {
                     "meta.embedded.sql": "sql"
                 }
+            },
+            {
+                "path": "./syntaxes/highlight-html-string.json",
+                "scopeName": "python-html.injection",
+                "injectTo": [
+                    "source.python"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.block.html": "html"
+                }
             }
         ],
         "snippets": [
