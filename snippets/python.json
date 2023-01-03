@@ -9,5 +9,16 @@
             "\"\"\""
 	    ],
 	    "description": "SQL highlighted string"
+    },
+    "PRQL_highlighted_string": {
+	    "prefix": "prql",
+	    "body": [
+            "\"\"\"",
+            "--prql",
+            "${1| ,SELECT,WITH|}",
+            ";",
+            "\"\"\""
+	    ],
+	    "description": "PRQL highlighted string"
     }
 }

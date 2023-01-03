@@ -1,0 +1,43 @@
+{
+  "fileTypes": [
+    "js",
+    "js.jsx",
+    "jsx",
+    "ts",
+    "tsx",
+    "py"
+  ],
+  "injectionSelector": "L:string.quoted.multi.python, L:meta.fstring.python - (comment.line.number-sign.python, punctuation.definition.comment.python), L:string.template.js, L:string.quoted.raw.go",
+  "patterns": [
+    {
+      "begin": "(\\s*-- *sql)",
+      "end": "( *;| *-- *endsql| *-- *end-sql)",
+      "captures": {
+        "1": {
+          "name": "variable.parameter"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.sql"
+        }
+      ]
+    },
+    {
+      "begin": "^(\\s*-- *prql)",
+      "end": "( *;| *-- *endprql| *-- *end-prql)",
+      "captures": {
+        "1": {
+          "name": "variable.parameter"
+        }
+      },
+      "patterns": [
+
+        {
+          "include": "source.prql"
+        }
+      ]
+    }
+  ],
+  "scopeName": "sql.injection"
+}

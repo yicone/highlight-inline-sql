@@ -1,12 +1,12 @@
 {
-    "name": "python-string-sql",
-    "displayName": "python-string-sql",
-    "description": "highlight python strings as sql",
-    "version": "1.1.0",
-    "publisher": "ptweir",
+    "name": "highlight-inline-sql",
+    "displayName": "Heiglighting Inline SQL and PRQL for js/go/python",
+    "description": "Syntax Highlighting for SQL and PRQL in js/jsx/ts/tsx template literals, go template literals, python multi-qutoted/f-strings",
+    "version": "0.9.0",
+    "publisher": "yicone",
     "icon": "docs/logo.png",
     "repository": {
-        "url": "https://github.com/ptweir/python-string-sql"
+        "url": "https://github.com/yicone/highlight-inline-sql"
     },
     "engines": {
         "vscode": "^1.32.0"
@@ -18,23 +18,19 @@
     "contributes": {
         "grammars": [
             {
-                "path": "./syntaxes/highlight-sql-string.json",
-                "scopeName": "python-sql.injection",
+                "path": "./syntaxes/highlight-inline-sql.json",
+                "scopeName": "sql.injection",
                 "injectTo": [
+                    "source.js",
+                    "source.js.jsx",
+                    "source.jsx",
+                    "source.ts",
+                    "source.tsx",
+                    "source.go",
                     "source.python"
                 ],
                 "embeddedLanguages": {
                     "meta.embedded.sql": "sql"
-                }
-            },
-            {
-                "path": "./syntaxes/highlight-html-string.json",
-                "scopeName": "python-html.injection",
-                "injectTo": [
-                    "source.python"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.block.html": "html"
                 }
             }
         ],
@@ -47,12 +43,21 @@
         "keybindings": [
             {
                 "command": "editor.action.insertSnippet",
-                "key": "cmd+s",
-                "mac": "ctrl+s",
+                "key": "cmd+k s",
+                "mac": "ctrl+k s",
                 "when": "editorTextFocus",
                 "args": {
                     "langId": "python",
                     "name": "SQL_highlighted_string"
+                }
+            },{
+                "command": "editor.action.insertSnippet",
+                "key": "cmd+k p",
+                "mac": "ctrl+k p",
+                "when": "editorTextFocus",
+                "args": {
+                    "langId": "python",
+                    "name": "PRQL_highlighted_string"
                 }
             }
         ]
